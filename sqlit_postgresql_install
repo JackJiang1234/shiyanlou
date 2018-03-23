@@ -1,0 +1,29 @@
+
+--postgresql install step
+
+--view debian version  cat /etc/debian_version
+
+deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main
+
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+
+sudo apt-get install wget ca-certificates
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install postgresql-9.6 pgadmin3
+
+
+
+--postgresql apt install
+
+sudo apt-get update
+sudo apt-get install postgresql
+sudo /etc/init.d/postgresql start
+
+
+--sqlite3
+sudo apt-get update
+sudo apt-get install sqlite3 
+
+
