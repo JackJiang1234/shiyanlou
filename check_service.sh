@@ -9,7 +9,6 @@ else
 	if [ $stopped != "" ];then
 		echo "Restarting"
 		sudo service name start
-	fi
 	else
 		echo "is Running"
 	fi
