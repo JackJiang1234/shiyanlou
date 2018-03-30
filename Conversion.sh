@@ -3,9 +3,9 @@
 input=$1
 
 function Convert(){
-	bytelimit = 1024
-	kblimit = ((1024*bytelimit))
-	mblimit = ((1024*kblimit))
+	bytelimit=1024
+	kblimit=((1024*bytelimit))
+	mblimit=((1024*kblimit))
 	
 	if [ $input -lt $bytelimit ];then
 		echo "${input}B"
